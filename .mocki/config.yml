@@ -99,3 +99,14 @@ endpoints:
         headers:
           - name: content-type
             value: application/json
+  
+  - path: /task_types
+    method: post
+    responses:
+      - statusCode: 200
+        body:
+          id: !Fake id
+          name: "New Task Type"
+        headers:
+          - name: content-type
+            value: application/json
